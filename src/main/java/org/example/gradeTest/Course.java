@@ -1,4 +1,4 @@
-package org.example;
+package org.example.gradeTest;
 
 public class Course {
     private final String subject; // 과목명
