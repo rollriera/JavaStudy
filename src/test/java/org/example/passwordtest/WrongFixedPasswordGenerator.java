@@ -1,4 +1,5 @@
-package org.example;
+package org.example.passwordtest;
+
 
 public class WrongFixedPasswordGenerator implements PasswordGenerator {
 

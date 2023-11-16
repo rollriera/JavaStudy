@@ -1,4 +1,4 @@
-package org.example;
+package org.example.passwordtest;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -26,9 +26,9 @@ public class PasswordValidatorText {
 
     @DisplayName("비밀번호가 8자 미만 또는 12자 초과하는 경우 IllegalArgumentException 예외가 발생한다.")
     @ParameterizedTest
-    @ValueSource(strings = {"aabbcce","aabbccddeeffg"})
+    @ValueSource(strings = {"aabbcce","aabbccddeeffg","aabb"})
     void validatePasswordTest2(String password) {
-        assertThatCode(() -> PasswordValidator.validate("aabb"))
+        assertThatCode(() -> PasswordValidator.validate(password))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("비밀번호는 최소 8자 이상이여야 합니다.");
     }

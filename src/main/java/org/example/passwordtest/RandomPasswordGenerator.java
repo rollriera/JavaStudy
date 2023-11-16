@@ -1,8 +1,8 @@
-package org.example;
+package org.example.passwordtest;
 
 import org.passay.*;
 
-public class RandomPasswordGenerator implements org.example.PasswordGenerator{
+public class RandomPasswordGenerator implements PasswordGenerator {
 
     public static final String ALLOWED_SPL_CHARACTERS = "!@#$%^&*()_+";
 
