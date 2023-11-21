@@ -1,5 +1,6 @@
-package org.example;
+package org.example.CalculateHTTP;
 
+import org.example.Customer;
 import org.example.cookTest.Cooking;
 import org.example.cookTest.Menu;
 import org.example.cookTest.MenuItem;
