@@ -1,9 +1,4 @@
-package org.example;
-
-import org.example.cookTest.Cook;
-import org.example.cookTest.Cooking;
-import org.example.cookTest.Menu;
-import org.example.cookTest.MenuItem;
+package org.example.cookTest;
 
 public class Customer {
 
