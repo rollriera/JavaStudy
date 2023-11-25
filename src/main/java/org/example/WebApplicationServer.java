@@ -13,6 +13,7 @@ public class WebApplicationServer {
     public static void main(String [] args) throws Exception{
 
         String webappDirLocation = "webapps/";
+
         Tomcat tomcat = new Tomcat();
 
         tomcat.setPort(8080);
