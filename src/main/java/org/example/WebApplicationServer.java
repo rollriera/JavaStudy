@@ -16,7 +16,7 @@ public class WebApplicationServer {
 
         Tomcat tomcat = new Tomcat();
 
-        tomcat.setPort(8080);
+        tomcat.setPort(8090);
 
         tomcat.addWebapp("", new File(webappDirLocation).getAbsolutePath());
 
