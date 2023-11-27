@@ -1,4 +1,4 @@
-package org.example;
+package org.example.CalculateHTTP;
 
 import org.example.calculate.PositiveNumber;
 import org.example.calculatortest.Calculator;
