@@ -1,1 +1,1 @@
-GET http://localhost:8090/calculate
+GET http://localhost:8081/calculate?operand1=10&operator=*&operand2=10

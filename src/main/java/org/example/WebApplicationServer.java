@@ -1,6 +1,7 @@
 package org.example;
 
 
+import org.apache.catalina.connector.Connector;
 import org.apache.catalina.startup.Tomcat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +17,9 @@ public class WebApplicationServer {
 
         Tomcat tomcat = new Tomcat();
 
-        tomcat.setPort(8090);
+        Connector connector = new Connector();
+        connector.setPort(8081);
+        tomcat.getService().addConnector(connector);
 
         tomcat.addWebapp("", new File(webappDirLocation).getAbsolutePath());
 
