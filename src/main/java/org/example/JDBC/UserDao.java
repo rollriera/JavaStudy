@@ -1,6 +1,5 @@
-package org.example;
+package org.example.JDBC;
 
-import javax.xml.transform.Result;
 import java.sql.*;
 
 public class UserDao {

@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.JDBC.User;
+import org.example.JDBC.ConnectionManager;
+import org.example.JDBC.UserDao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.ClassPathResource;
