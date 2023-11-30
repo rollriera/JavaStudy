@@ -11,7 +11,7 @@ import java.io.File;
 public class WebApplicationServer {
     private static final Logger log = LoggerFactory.getLogger(WebApplicationServer.class);
 
-    public static void main(String [] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
         String webappDirLocation = "webapps/";
 
