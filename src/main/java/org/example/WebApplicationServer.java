@@ -18,6 +18,7 @@ public class WebApplicationServer {
         Tomcat tomcat = new Tomcat();
 
         Connector connector = new Connector();
+
         connector.setPort(8081);
         tomcat.getService().addConnector(connector);
 
