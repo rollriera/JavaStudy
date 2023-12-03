@@ -20,6 +20,7 @@ public class WebApplicationServer {
         Connector connector = new Connector();
 
         connector.setPort(8081);
+
         tomcat.getService().addConnector(connector);
 
         tomcat.addWebapp("", new File(webappDirLocation).getAbsolutePath());
