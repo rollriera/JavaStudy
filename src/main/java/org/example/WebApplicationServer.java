@@ -23,6 +23,7 @@ public class WebApplicationServer {
 
         tomcat.getService().addConnector(connector);
 
+
         tomcat.addWebapp("", new File(webappDirLocation).getAbsolutePath());
 
         log.info("configuring app with basedir: {}", new File("/" + webappDirLocation).getAbsolutePath());
