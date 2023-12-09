@@ -30,11 +30,18 @@ public class AnnotationHandlerMapping implements HandlerMapping {
         clazzsWithControllerAnnotation.forEach(clazz ->
                 Arrays.stream(clazz.getDeclaredMethods()).forEach(declaredMethod ->{
                     RequestMapping requestMapping = declaredMethod.getDeclaredAnnotation(RequestMapping.class);
+                    if(requestMapping != null){
+
 
                     Arrays.stream(getRequestMethods(requestMapping))
                             .forEach(requestMethod -> handlers.put(
                                     new HandlerKey(requestMethod, requestMapping.value()), new AnnotationHandler(clazz, declaredMethod)
                             ));
+                    }
+                    if (declaredMethod.getName().equals("favicon") && declaredMethod.getParameterCount() == 0) {
+                        handlers.put(new HandlerKey(RequestMethod.GET, "/favicon.ico"), new AnnotationHandler(clazz, declaredMethod));
+                    }
+
                 }));
     }
 
