@@ -31,6 +31,7 @@ public class WebApplicationServer {
         tomcat.start();
 
         tomcat.getServer().await();
+
     }
 
 }
